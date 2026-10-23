@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.bodega.sistemabodega;
+import java.util.Scanner;
 
-/**
- *
- * @author renato
- */
+
+
+
 public class SistemaBodega {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+        
+        
+        
     }
 }
