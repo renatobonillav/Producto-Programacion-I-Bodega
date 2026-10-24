@@ -35,17 +35,21 @@ public class SistemaBodega {
             switch (op) {
 
                 case 1:
-
+                    //aqui habia un espacio raro
                     System.out.print(
-                        "Ingresa el Nombre del Producto: "
+                        "\n"
+                        + "Ingresa el Nombre del Producto: "
                     );
                     nombre = sc.nextLine();
 
+                    
+                    // Seria buena que fuera un checklist con su propia sección que se van a crear duplicados fijo
                     System.out.print(
                         "Ingresa la Categoria del Producto: "
                     );
                     categoria = sc.nextLine();
 
+                    //Como que crear codigo, esto se debe crear solo
                     System.out.print(
                         "Ingresa el Codigo del Producto: "
                     );
@@ -83,16 +87,20 @@ public class SistemaBodega {
 
                 case 2:
 
+                    //el cambio solamente son las lineas para que se vean "mejor"
                     if (productos.isEmpty()) {
                         System.out.println(
-                            "No hay productos registrados"
+                            "\n-----------------------------\n"
+                          + "No hay productos registrados"
+                          + "\n-----------------------------\n"
                         );
 
                     } else {
                         String ls = "";
 
                         for (Producto producto : productos) {
-                            ls += "Codigo: " + producto.getCodigo()
+                            ls  +="\n----------------------\n"
+                                + "Codigo: " + producto.getCodigo()
                                 + "\nNombre: " + producto.getNombre()
                                 + "\nCategoria: "
                                 + producto.getCategoria()
